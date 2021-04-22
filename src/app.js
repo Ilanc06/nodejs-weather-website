@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast')
 
 // Getting all Express features into the app component
 const app = express()
+const port = process.env.PORT || 3000  //  -- || means Or 3000 if first one not valid
 
 
 // Define paths for Express config
@@ -124,7 +125,7 @@ res.render('404',{
 })
 })
 
-app.listen(3000, () => {
-console.log('Server Start properly on port 3000');
+app.listen(port, () => {
+console.log('Server Start properly on port ' + port);
 
 })
