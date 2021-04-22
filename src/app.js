@@ -32,7 +32,7 @@ app.use(express.static(publicDirectory))
 // Rendering pages using hbs this one is for Index page the root one since the string is ''
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'This is the Weather App',
+        title: 'Weather',
         name: 'Ilan Cohen'
     })
 })
